@@ -1,0 +1,127 @@
+<html>
+	<head>
+		<title>Box model and flex</title>
+		<nav style="display: flex; justify-content: space-around; background-color: rgb(100,10,10); color: white; margin-left: 10%; margin-right: 10%;">
+	      <h3>Name:Farhan Muhamed Jaffar</h3>
+	      <h3>Roll.No:2006170</h3>
+	    </nav>
+	    <style>
+			.sd{
+				color: rgb(0, 10, 10);
+				margin-left: 10%;
+				margin-right: 10%;
+				background-color: rgb(250, 250, 250);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-bottom-left-radius: 20px ;
+				border-right-width: 200px;				
+				font-size: 18;
+				text-align: justify;
+  				padding-top: 20px;
+  				padding-bottom: 20px;
+  				padding-right: 10px;
+  				padding-left: 10px;
+			}
+			.for_text{
+				font-weight: bold;
+				text-decoration: underline;
+			}
+			div {
+				font-size: 18;
+				padding: 20px;
+				border: 5px solid black; 
+				width: 900px;
+				height: 600px;
+				margin-left: 10%;
+
+				}
+			text{
+				font-size: 28;
+				text-decoration: underline;
+				margin-left: 10%;
+			}
+			.container{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+			fieldset{
+				padding: 50px;
+				box-sizing: border-box;
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+			.formarquee{
+				font-size: 29;
+				font-weight: bold;
+			}
+			legend {
+			  background-color: lightsteelblue;
+			  color: red;
+			  font-weight: bold;
+			  font-size: 20;
+			  padding: 5px 10px;
+			}
+	    </style>
+	</head>
+
+	<body background="https://cdn.wallpapersafari.com/51/78/dltnIv.jpg">
+		<br><br><br><br>
+		<center>
+		<marquee bgcolor="skyblue" width="500px" height="30px" class="formarquee">BOX MODEL IN CSS</marquee></center><br><br><br><br>
+		<p align="center" class="sd" >The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. In CSS box model, each element is represented as a box with the following parts or properties:
+										<br>
+		<b>Content:</b>It is the area where the content of the box is displayed
+										<br>
+		<b>Padding:</b>The space or area between the outer edge of the content box and the inner edge of the border
+										<br>
+		<b>Border:</b>The area between margin and the padding; its width, style and color can be changed
+										<br>
+		<b>Margin: </b>The area or space outside the border or outside the CSS box; it is transparent</p>
+		
+		<center>
+		 <img src="https://cloud-ex42.usaupload.com/cache/plugins/filepreviewer/205894/8ea3414ba69181665a25f370812ead3b0d12d69aa133a361992d71fbc61c4bb3/280x280_middle.jpg"/>
+		
+				<p class="for_text">This is a sample of box model</p>
+			</center>
+<br><br><br><br><br>
+		<div><b>This is a div box model, here border is 5 pixel and padding 20 pixel</b><br>To get the total width or height of a CSS Box we have to use the following formulas.
+				<br>CSS Box's width= left border's width + left padding's width + content box's width + right padding's width + right border's width
+				<br>CSS Box's height = top border's height + top padding's height + content box's height + bottom padding's height + bottom border's height <br>For example, if a element div has the following CSS declarations
+					<br>&nbsp &nbsp &nbsp &nbsp &nbsp width: 900px;
+					<br>&nbsp &nbsp &nbsp &nbsp &nbsp height: 600px;
+					<br>&nbsp &nbsp &nbsp &nbsp &nbsp padding: 20px;
+					<br>&nbsp &nbsp &nbsp &nbsp &nbsp border: 5px
+					<br>its total width/height would then be 950px/650px:
+					<br>Width and height CSS properties only set width and height of the content box not the entire CSS box.
+				<br><br><img src="https://cloud-ex42.usaupload.com/cache/plugins/filepreviewer/205933/da1ed05c217fa17f7bc5d8ae74b57b13586e3d07903dcf8150df62653fd0a472/280x280_middle.jpg"/>
+			</div><br><br><br><br>
+			<text>Box-sizing</text><br><br>
+			<div style="Box-sizing: border-box"><b>This is the same box after adding box sizing as border box</b><br>Now the final rendered width of the element is only 900px,it's because padding and border is already included in 900px. It's highly recomended to use this approach in web designing.
+					<br>&nbsp &nbsp &nbsp &nbsp &nbsp Box-sizing: border-box
+					<br>&nbsp &nbsp &nbsp &nbsp &nbsp width: 900px;
+					<br>&nbsp &nbsp &nbsp &nbsp &nbsp height: 600px;
+					<br>&nbsp &nbsp &nbsp &nbsp &nbsp padding: 20px;
+					<br>&nbsp &nbsp &nbsp &nbsp &nbsp border: 5px
+					<br>Its total width & height would then be 950px & 650px:
+					<br><br><img src="https://cloud-ex42.usaupload.com/cache/plugins/filepreviewer/207428/699442e28a57792498b0d7220914d9d36184a43f84c9e073a3890e3fed2a9ca9/280x280_middle.jpg"/>
+
+			</div>
+<br><br><br><br><br><br>
+
+			<fieldset class="container">
+
+ 	   			 <legend>FLEX EXAMPLES</legend>
+				
+					<img width="400px" src="https://media.istockphoto.com/photos/digital-eye-wave-lines-stock-background-stock-video-picture-id1226241649?b=1&k=20&m=1226241649&s=170667a&w=0&h=lXhD5bdn_YT50-ItctUnqB2WiGZ8Jye1GZHjvDsb2Xo="/>
+					<img width="400px" src="https://media.istockphoto.com/photos/digital-eye-wave-lines-stock-background-stock-video-picture-id1226241649?b=1&k=20&m=1226241649&s=170667a&w=0&h=lXhD5bdn_YT50-ItctUnqB2WiGZ8Jye1GZHjvDsb2Xo="/>	
+					<img width="400px" src="https://media.istockphoto.com/photos/digital-eye-wave-lines-stock-background-stock-video-picture-id1226241649?b=1&k=20&m=1226241649&s=170667a&w=0&h=lXhD5bdn_YT50-ItctUnqB2WiGZ8Jye1GZHjvDsb2Xo="/>	
+					<img width="400px" src="https://media.istockphoto.com/photos/digital-eye-wave-lines-stock-background-stock-video-picture-id1226241649?b=1&k=20&m=1226241649&s=170667a&w=0&h=lXhD5bdn_YT50-ItctUnqB2WiGZ8Jye1GZHjvDsb2Xo="/>
+					<img width="400px" src="https://media.istockphoto.com/photos/digital-eye-wave-lines-stock-background-stock-video-picture-id1226241649?b=1&k=20&m=1226241649&s=170667a&w=0&h=lXhD5bdn_YT50-ItctUnqB2WiGZ8Jye1GZHjvDsb2Xo="/>
+					<img width="400px" src="https://media.istockphoto.com/photos/digital-eye-wave-lines-stock-background-stock-video-picture-id1226241649?b=1&k=20&m=1226241649&s=170667a&w=0&h=lXhD5bdn_YT50-ItctUnqB2WiGZ8Jye1GZHjvDsb2Xo="/>	
+					<img width="400px" src="https://media.istockphoto.com/photos/digital-eye-wave-lines-stock-background-stock-video-picture-id1226241649?b=1&k=20&m=1226241649&s=170667a&w=0&h=lXhD5bdn_YT50-ItctUnqB2WiGZ8Jye1GZHjvDsb2Xo="/>	
+					<img width="400px" src="https://media.istockphoto.com/photos/digital-eye-wave-lines-stock-background-stock-video-picture-id1226241649?b=1&k=20&m=1226241649&s=170667a&w=0&h=lXhD5bdn_YT50-ItctUnqB2WiGZ8Jye1GZHjvDsb2Xo="/>	
+					
+			</fieldset>
+    </html>
