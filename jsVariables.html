@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>Scope of variables in javascript</title>
+		<nav style="display: flex; justify-content: space-around; background-color: rgb(100,10,10); color: white;">
+      <h3>Name:Farhan Muhamed Jaffar</h3>
+      <h3>JS ASSIGNMENT</h3>
+      <h3>Roll.No:2006170</h3>
+    </nav>
+		<style>
+			.sd{jsVariables.html
+
+				background-color: silver;
+				font-size: 20;
+				text-align: justify;
+  				text-justify: inter-word;
+			}
+			
+			fieldset {
+ 			 margin-right: 10%;
+ 			 margin-left: 10%;
+			}
+			legend {
+			  background-color: gray;
+			  color: white;
+			  padding: 5px 10px;
+			  font-size: 25px;
+			}
+			h3{
+				text-decoration: underline;
+			}
+			
+		</style>
+          
+	</head>
+	<body  background="https://cdn.wallpapersafari.com/51/78/dltnIv.jpg">
+		<br><br><br><br>
+
+		<br><br><br><br>
+		<fieldset class="sd">
+ 	    <legend> Variable Scope in Javascript</legend>
+Scope refers to the availability of variables and functions in certain parts of the code.
+<br><br>
+In JavaScript, a variable has two types of scope:
+<br><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1)Global Scope<br>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2)Local Scope
+
+<br><br><br>
+<h3>GLOBAL SCOPE</h3>
+A variable declared at the top of a program or outside of a function is considered a global scope variable.<br>
+
+Let's see an example of a global scope variable.<br><br>
+<img src="https://i.ibb.co/XX6QbK7/Capture.png" alt="Capture" border="0"><br>
+<br>In the above program, variable a is declared at the top of a program and is a global variable. It means the variable a can be used anywhere in the program.
+<br><br>The value of a global variable can be changed inside a function. For example,<br><br>
+
+<img src="https://i.ibb.co/pyLnmXW/image-2021-11-01-183617.png" alt="image-2021-11-01-183617" border="0"><br><br>
+In the above program, variable a is a global variable. The value of a is hello. Then the variable a is accessed inside a function and the value changes to 3.
+
+Hence, the value of a changes after changing it inside the function.<br><br>
+<fieldset class="sd">
+ 	    <legend>Note</legend>
+ It is a good practice to avoid using global variables because the value of a global variable can change in different areas in the program. It can introduce unknown results in the program.</fieldset>
+<br><br>
+
+  In JavaScript, a variable can also be used without declaring it. If a variable is used without declaring it, that variable automatically becomes a global variable.
+<br><br><br>
+<h3>LOCAL SCOPE</h3>
+A variable with local scope can only be accessed within the function.<br><br> 
+<img src="https://i.ibb.co/mJsr2Xw/image-2021-11-01-185532.png" alt="image-2021-11-01-185532" border="0"><br><br>
+In the above program, variable a is a global variable and variable b is a local variable. The variable b can be accessed only inside the function greet. Hence, when we try to access variable b outside of the function, an error occurs.
+<br><br><br>
+<h3>BLOCK SCOPED VARIABLES</h3>
+If a variable is declared in a block using let, then the variable can't be accessed outside the block.<br>For example,<br><br>
+<img src="https://i.ibb.co/KLjcMKZ/image-2021-11-01-190730.png" alt="image-2021-11-01-190730" border="0"><br><br>
+In the above program, variable
+<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa is a global variable. It can be accessed anywhere in the program.<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb is a local variable. It can be accessed only inside the function greet.<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc is a block-scoped variable. It can be accessed only inside the if statement block.<br><br>
+Hence, in the above program, the first two console.log() work without any issue.
+
+However, we are trying to access the block-scoped variable c outside of the block in the third console.log(). This will throw an error.
+
+
+	    </fieldset>
+		<br><br><br><br>
+
+		
+
+		<br><br><br><br>
+
+
+		
+	</body>
+</html>
