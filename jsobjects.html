@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Objects in JavaScript </title>
+   <style>
+   	div{
+   		height: 100px;
+   		width: 200px;
+   		background-color: skyblue;
+   		padding: 20px;
+   		border: 5px solid red;
+      border-color: rgb(200,100,0);
+      border-style: ridge;
+   	}
+
+    
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(100,100,100);
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  background: #333;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+  color: rgb(200,100,0);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+button:hover {
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+  font-size: 15px;
+  transition: 500ms;
+}
+
+button:focus {
+  outline: none;
+}
+
+.red:hover {
+  color: #f07171;
+  text-shadow: 0px 0px 10px #f07171;
+}
+
+.green:hover {
+    color: #93f071;
+  text-shadow: 0px 0px 10px #93f071;
+}
+
+.blue:hover {
+  color: #71b7f0;
+  text-shadow: 0px 0px 10px #71b7f0;
+}
+
+.purple:hover {
+  color: #b971f0;
+  text-shadow: 0px 0px 10px #b971f0;
+}
+.stylename {
+ color: #006;
+ font-size: 20px;
+ background-color: rgb(200,230,240);
+ width: 40%;
+ align-content: left;
+ text-align: left;
+}
+h2 {
+    color: rgb(240,190,100);
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #ccc;
+    font-size: 40px;
+    text-decoration: underline;
+}
+        
+        p{
+          padding: 25px;
+        }
+    </style>
+</head>
+<body>
+   <center>
+    <h2>JavaScript Objects</h2>
+    <br><br><br><br>
+    <p class="stylename">This example shows the usage of objects in java script. Here I have declared three objects person1, person2 and person3. All of these objects have firstname, lastname, address and a function showdetials(). Through this function we can get detials of each person using <b>"this" </b> keyword. <br><br>
+      for example,<br>
+      <b>"this.firstname"</b> will give first name of the object.<br><br>
+    Click on black button below to show detials of each person.</p><br><br><br>
+   <div id="demo1">PERSON 1</div><br>
+   <button onclick="person1.showDetails()" class="noselect purple">PERSON 1 </button><br><br><br>
+   <script>
+      var person1 = {
+         firstname: "John ",
+         lastname: "Walker",
+         Address: "abcd house",
+         showDetails: function() {
+            document.getElementById("demo1").innerHTML = "Firstname :" + this.firstname + " <br> lastname :" + this.lastname + "<br> Address :" + this.Address ;
+         }  
+      };
+   </script>
+
+
+   <div id="demo2">PERSON 2</div><br>
+   <button onclick="person2.showDetails()" class="noselect green">  PERSON 2 </button><br><br><br>
+
+   <script>
+      var person2 = {
+         firstname: "Jack ",
+         lastname: "Smith",
+         Address: "abcd house",
+         showDetails: function() {
+            document.getElementById("demo2").innerHTML = "Firstname :" + this.firstname + " <br> lastname :" + this.lastname + "<br> Address :" + this.Address ;
+         }
+     };
+   </script>
+
+    <div id="demo3">PERSON 3</div><br>
+    <button onclick="person3.showDetails()" class="noselect red"> PERSON 3 </button>
+
+
+    <script>
+      var person3 = {
+         firstname: "Jonny ",
+         lastname: "Wilde",
+         Address: "abcd house",
+         showDetails: function() {
+            document.getElementById("demo3").innerHTML = "Firstname :" + this.firstname + " <br> lastname :" + this.lastname + "<br> Address :" + this.Address ;
+
+        }
+    };
+
+   </script></center><br><br><br><br>
+   <nav style="display: flex; background-color: rgb(100,10,10); color: white; width: 100%; justify-content: space-around; ">
+      <text>Designed by : Farhan Muhamed Jaffar<br>Instition Roll no. :2006170</text></nav>
+</body></html>  
